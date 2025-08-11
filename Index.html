@@ -1,90 +1,95 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Agência Global de Surf em Piscinas de Ondas</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root{--bg:#0b0f14;--card:#121823;--muted:#9fb0c0;--accent:#31c3ff;--cta:#00ffa3}
-    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,sans-serif;background:linear-gradient(180deg,#0b0f14, #061018);}
-    .wrap{max-width:1024px;margin:auto;padding:28px}
-    .nav{display:flex;justify-content:space-between;align-items:center;color:white}
-    .brand{font-weight:800;letter-spacing:.5px}
-    .chip{font-size:12px;padding:6px 10px;border:1px solid #223042;border-radius:999px;color:#a8c7ff}
-    .hero{margin:28px 0;padding:28px;border:1px solid #1f2a38;background:radial-gradient(1200px 500px at 30% -10%,#12233a 0%,transparent 60%), var(--card); border-radius:18px;color:#e8f1f8}
-    h1{font-size:34px;margin:0 0 12px}
-    p{color:var(--muted);line-height:1.7;margin:0 0 18px}
-    .cta{display:inline-block;background:var(--cta);color:#001b12;font-weight:800;text-decoration:none;padding:12px 18px;border-radius:12px}
-    .grid{display:grid;gap:16px;margin:22px 0}
-    @media(min-width:800px){.grid{grid-template-columns:repeat(3,1fr)}}
-    .card{background:var(--card);border:1px solid #1f2a38;border-radius:16px;padding:18px;color:#cfe7ff}
-    .card h3{margin:0 0 8px;font-size:18px}
-    .tag{display:inline-block;margin-right:8px;margin-top:6px;padding:6px 10px;border-radius:999px;background:#0b1b29;color:#9cd6ff;font-size:12px;border:1px solid #1f354c}
-    .footer{color:#5f7991;font-size:12px;text-align:center;margin:22px 0}
-    .list{margin:0;padding-left:18px;color:#b6c9dc}
-    a{color:var(--accent);text-decoration:none}
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>A Provocadora • Agência de Surf & Cinema</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0D12;--card:#101722;--stroke:#1b2633;--text:#e7eef6;--muted:#9fb0c0;--accent:#00E0B8;--link:#71C8FF;--chip:#162536}
+*{box-sizing:border-box}html,body{margin:0;background:radial-gradient(1600px 600px at 10% -10%,#0f2035 0%,transparent 55%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,sans-serif}
+.wrap{max-width:1120px;margin:auto;padding:28px}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:.6px}
+.badge{font-size:12px;padding:6px 10px;border:1px solid var(--stroke);border-radius:999px;background:var(--chip);color:#9fd1ff}
+.hero{margin:28px 0;padding:36px;border:1px solid var(--stroke);border-radius:18px;background:
+linear-gradient(180deg,rgba(14,24,36,.6),rgba(10,13,18,.8)),
+url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat}
+.hero h1{margin:0 0 10px;font:700 40px/1.1 "Playfair Display",serif}
+.hero p{margin:0 0 18px;color:var(--muted);max-width:720px}
+.cta{display:inline-block;background:var(--accent);color:#00241d;font-weight:800;text-decoration:none;padding:12px 18px;border-radius:12px}
+.grid{display:grid;gap:16px;margin:26px 0}
+@media(min-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border:1px solid var(--stroke);border-radius:16px;padding:18px}
+.card h3{margin:0 0 8px}
+.tag{display:inline-block;margin:6px 8px 0 0;padding:6px 10px;border:1px solid var(--stroke);border-radius:999px;background:#0d1a28;color:#9cd6ff;font-size:12px}
+.section h2{margin:8px 0 6px;font-size:22px}
+.list{margin:0;padding-left:18px;color:#cfe0f0}
+.footer{margin:30px 0;color:#7e93a8;text-align:center;font-size:12px}
+a{color:var(--link);text-decoration:none}
+hr{border:0;border-top:1px solid var(--stroke);margin:24px 0}
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="nav">
-      <div class="brand">A PROVOCADORA • SURF</div>
-      <div class="chip">Curadoria global • Wavepools</div>
-    </div>
+<div class="wrap">
 
-    <section class="hero">
-      <h1>Viagens de Surf em Piscinas de Ondas</h1>
-      <p>Pacotes com inventário real, coaching com vídeo, recuperação e sustentabilidade. Operadores: The Wave, Alaïa Bay, URBNSURF, Wave Park, Waco Surf.</p>
-      <a class="cta" href="#produtos">Ver pacotes</a>
-    </section>
-
-    <section class="grid" id="produtos">
-      <div class="card">
-        <h3>Camps 3/5/7 dias</h3>
-        <p>2–3 sessões/dia, vídeo-análise, mobilidade e recuperação.</p>
-        <span class="tag">Iniciante</span><span class="tag">Intermediário</span><span class="tag">Avançado</span>
-      </div>
-      <div class="card">
-        <h3>Comparação de Tecnologias</h3>
-        <p>PerfectSwell x Wavegarden Cove. Evolução técnica mensurável.</p>
-        <span class="tag">Waco</span><span class="tag">Atlantic Park</span>
-      </div>
-      <div class="card">
-        <h3>Corporate Offsite</h3>
-        <p>Leadership sprints, ESG, métricas dentro e fora d’água.</p>
-        <span class="tag">B2B</span><span class="tag">ESG</span>
-      </div>
-    </section>
-
-    <section class="grid">
-      <div class="card">
-        <h3>MVP do app</h3>
-        <ul class="list">
-          <li>Inventário por nível em tempo real</li>
-          <li>Coach AI + diário de evolução</li>
-          <li>Passaporte de Surf digital</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Destinos âncora</h3>
-        <ul class="list">
-          <li>The Wave • Bristol</li>
-          <li>Alaïa Bay • Sion</li>
-          <li>URBNSURF • Melbourne</li>
-          <li>Wave Park • Siheung</li>
-          <li>Waco Surf • Texas</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Contato</h3>
-        <p>E-mail: <a href="mailto:contato@aprovocadora.surf">contato@aprovocadora.surf</a></p>
-        <p>WhatsApp: <a href="https://wa.me/5599999999999">+55 99 99999-9999</a></p>
-      </div>
-    </section>
-
-    <div class="footer">© A Provocadora • Tecnologia | Performance | Sustentabilidade</div>
+  <div class="nav">
+    <div class="brand">A PROVOCADORA</div>
+    <div class="badge">Tecnologia • Performance • Sustentabilidade</div>
   </div>
+
+  <header class="hero">
+    <h1>Surf em Piscinas de Ondas com estética de cinema</h1>
+    <p>Viagens curadas, inventário real, coaching com vídeo e experiências premium com The Wave, Alaïa Bay, URBNSURF, Wave Park e Waco Surf.</p>
+    <a class="cta" href="#pacotes">Ver pacotes</a>
+  </header>
+
+  <section class="grid" id="pacotes">
+    <div class="card">
+      <h3>Camps 3/5/7 dias</h3>
+      <p>2–3 sessões por dia, vídeo-análise, mobilidade e recuperação.</p>
+      <span class="tag">Iniciante</span><span class="tag">Intermediário</span><span class="tag">Avançado</span>
+    </div>
+    <div class="card">
+      <h3>Comparação de tecnologias</h3>
+      <p>PerfectSwell × Wavegarden Cove com métricas objetivas de evolução.</p>
+      <span class="tag">Waco</span><span class="tag">Atlantic Park</span>
+    </div>
+    <div class="card">
+      <h3>Corporate Offsite</h3>
+      <p>Liderança, ESG e inovação com blocos de surf estruturados.</p>
+      <span class="tag">B2B</span><span class="tag">ESG</span>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="card section">
+      <h2>Módulos do app</h2>
+      <ul class="list">
+        <li>Inventário em tempo real por nível</li>
+        <li>Coach AI e diário de evolução</li>
+        <li>Passaporte de Surf digital</li>
+      </ul>
+    </div>
+    <div class="card section">
+      <h2>Destinos âncora</h2>
+      <ul class="list">
+        <li>The Wave • Bristol</li><li>Alaïa Bay • Sion</li><li>URBNSURF • Melbourne</li>
+        <li>Wave Park • Siheung</li><li>Waco Surf • Texas</li>
+      </ul>
+    </div>
+    <div class="card section">
+      <h2>Contato</h2>
+      <p>E-mail: <a href="mailto:contato@aprovocadora.surf">contato@aprovocadora.surf</a></p>
+      <p>WhatsApp: <a href="https://wa.me/5599999999999">+55 99 99999-9999</a></p>
+      <p>Instagram: <a href="https://instagram.com/">@aprovocadora</a></p>
+    </div>
+  </section>
+
+  <hr/>
+  <div class="footer">© A Provocadora • Agência de Surf & Cinema</div>
+</div>
 </body>
 </html>
