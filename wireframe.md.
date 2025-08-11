@@ -1,0 +1,29 @@
+# Wireframe – MVP do Aplicativo
+
+## Tela Inicial
+- Busca por destino, nível e temperatura da água.
+- Destaque para promoções e pré-aberturas.
+
+## Inventário em Tempo Real
+- Slots disponíveis por nível (iniciante, intermediário, avançado).
+- Filtro por data e duração da viagem.
+
+## Detalhe da Sessão
+- Resumo da experiência.
+- Preço e política de cancelamento.
+- Add-ons: coach, mídia profissional, locação de prancha.
+
+## Perfil do Usuário
+- Diário de evolução (vídeo antes/depois, estatísticas).
+- Badges de conquistas.
+- Proof-of-Surf (NFT opcional).
+
+## Comunidade
+- Chat por grupo de viagem.
+- Agenda compartilhada.
+- Ranking de evolução.
+
+## Checkout
+- Pagamento multimoeda.
+- Aceite dos termos de risco esportivo.
+- Opção de compensação de carbono.
